@@ -10,6 +10,7 @@ static class CFG
 {
     public const int UPDATE_MS  = 4000;
     public const int TOPMOST_MS = 33;
+	public const int REPOSITION_MS = 500;
     public const int OFFSET_FROM_TRAY = -15;
 
     public const int   PILL_W    = 59;
@@ -569,14 +570,12 @@ class BatteryWidget : Form
         Invalidate();
         StartTray();
 
+        var timerR = new System.Windows.Forms.Timer { Interval = CFG.REPOSITION_MS };
+        timerR.Tick += (_, _) => Reposition();
+        timerR.Start();
+
         var timerB = new System.Windows.Forms.Timer { Interval = CFG.UPDATE_MS };
-        timerB.Tick += (_, _) =>
-        {
-            ReadBattery();
-            Reposition();
-            Invalidate();
-            UpdateTray();
-        };
+        timerB.Tick += (_, _) => { ReadBattery(); Invalidate(); UpdateTray(); };
         timerB.Start();
     }
 
