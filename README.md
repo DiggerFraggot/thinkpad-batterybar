@@ -1,4 +1,4 @@
-# thinkpad-batterybar
+# thinkpad-batterybar v0.11
 
 A taskbar battery widget for Windows 11, built as a replacement for the battery gauge that used to be available in **Lenovo Vantage** — removed in newer versions of the app and unavailable on Windows 11.
 
