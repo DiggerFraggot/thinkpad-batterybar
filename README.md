@@ -4,7 +4,8 @@ A lightweight taskbar battery widget for Windows 11, built as a replacement for 
 
 Displays a live battery bar directly on the taskbar, next to the system clock.
 
-![preview](preview.png)
+![preview](<img width="244" height="44" alt="image" src="https://github.com/user-attachments/assets/a3812f83-83d8-4c33-bd05-549cba9a7102" />
+)
 
 ---
 
