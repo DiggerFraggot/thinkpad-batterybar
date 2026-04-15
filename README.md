@@ -18,7 +18,6 @@ Displays a live battery bar directly on the taskbar, next to the system clock.
 - Stays on top of the taskbar at all times
 - Language support: Polish / English (saved to registry)
 - Tray icon with current battery level
-- Single `.exe`, no installer, no dependencies
 
 ---
 
